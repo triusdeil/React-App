@@ -1,0 +1,69 @@
+/*
+//Componentes
+/*
+function HelloWorld(props){
+  console.log(props)
+  return(
+    <div id='hello'>
+      <h3>{props.subtitle}</h3>
+      {props.mytext}
+    </div>
+  )
+}
+*/
+/*
+class HelloWorld extends React.Component{
+  //states
+  state = {
+    show:true
+  }
+
+  toggleShow = () =>{
+     this.setState({show: !this.state.show})
+  }
+
+  render(){
+    if(this.state.show){
+      return(
+        <div id='hello'>
+          <h3>{this.props.subtitle}</h3>
+          {this.props.mytext}
+          <button onClick={this.toggleShow}>Toggle Show</button>
+        </div>
+      )
+    }else{
+      return <h1>
+        There are not elements
+        <button onClick={this.toggleShow}>Toggle Show</button>
+        </h1>
+    }
+  }
+}
+/*
+//function Clase
+class App extends React.Component{
+  render(){
+    return <div> This is my component: <HelloWorld/></div>
+  }
+}
+*/
+//funcion flecha
+/*
+const App = () => <div>This is my component: <HelloWorld/></div>
+*/
+
+//function normal
+/*
+function App() {
+  return (
+    <div>
+      this is my component: 
+      <HelloWorld mytext='Hello Luis' subtitle='lorem ipsum'/> 
+      <HelloWorld mytext='Hola Mundo' subtitle='component two' /> 
+      <HelloWorld mytext='Hello' subtitle='component three' />
+    </div>
+  );
+}
+
+//props
+*/
